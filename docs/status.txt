@@ -1,0 +1,7 @@
+leecy@DESKTOP-E1DU62R MINGW64 /c/users/leecy/OneDrive/Desktop/College/Software Engineering/assignment2 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
