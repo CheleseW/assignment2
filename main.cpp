@@ -4,6 +4,7 @@
 #include "Jet.h"
 #include "PoweredVehicle.h"
 #include "Skateboard.h"
+#include "Yacht.h"
 
 using namespace std;
 
@@ -13,7 +14,7 @@ void printVehiclesRoster1(PoweredVehicle **vehicles, int size);
 int main() {
     std::cout << "Driving simulator" << std::endl;
     int size = 7;
-    int size1 = 2;
+    int size1 = 4;
     int capacity = 10;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
     PoweredVehicle **pvArray = new PoweredVehicle *[capacity];
@@ -28,9 +29,12 @@ int main() {
     vehiclesArray[6] = new Skateboard("Santa Cruz", "Screaming Hand Black");
     pvArray[0] = new Jet("Learjet 31", "Model 55", 4);
     pvArray[1] = new Jet("Hawker 400", "400 Beechjet", 4);
+    pvArray[2] = new Yacht("Sunseeker", "Predator 62", 3);
+    pvArray[3] = new Yacht("Prestige", "460 S", 3);
 
 
     pvArray[1]->setFuelType("Rocket");
+    pvArray[2]->setFuelType("Commercial");
 
 
 

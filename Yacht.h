@@ -10,11 +10,17 @@
 class Yacht : public PoweredVehicle {
 
 private:
+  int myThrottle;
+  //Each notch forward on the throttle increases speed by 20 percent
+  //Each notch forward on the throttle increases speed by another 10 percent
+  // for commercial fuel
 
 public:
-    explicit Yacht(string brand, string model, int gearCount = 1);
+    explicit Yacht(string brand, string model, int throttleSetting = 1);
 
     virtual ~Yacht();
+    int getThrottle();
+    void setThrottle(int gearCount);
     virtual double mileageEstimate(double time);
 
     virtual string toString();
