@@ -1,13 +1,13 @@
 //
-// Created by Esteban Parra on 9/5/19.
+// Created by Chelese Washington on 10/4/2019.
 //
 
 #ifndef DRIVINGSIMULATOR_YACHT_H
 #define DRIVINGSIMULATOR_YACHT_H
 
-#include "Vehicle.h"
+#include "PoweredVehicle.h"
 
-class Yacht : public Vehicle {
+class Yacht : public PoweredVehicle {
 
 private:
 

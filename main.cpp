@@ -3,6 +3,7 @@
 #include "Bicycle.h"
 #include "Jet.h"
 #include "PoweredVehicle.h"
+#include "Skateboard.h"
 
 using namespace std;
 
@@ -11,7 +12,7 @@ void printVehiclesRoster1(PoweredVehicle **vehicles, int size);
 
 int main() {
     std::cout << "Driving simulator" << std::endl;
-    int size = 6;
+    int size = 7;
     int size1 = 2;
     int capacity = 10;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
@@ -24,6 +25,7 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
+    vehiclesArray[6] = new Skateboard("Santa Cruz", "Screaming Hand Black");
     pvArray[0] = new Jet("Learjet 31", "Model 55", 4);
     pvArray[1] = new Jet("Hawker 400", "400 Beechjet", 4);
 
@@ -62,7 +64,7 @@ void printVehiclesRoster(Vehicle **vehicles, int size) {
         cout << i << " " << vehicles[i]->toString() << endl;
         cout << "\tWould travel: "
              << vehicles[i]->mileageEstimate(simulatedDistance) << " miles in "
-             << simulatedDistance << " seconds" << endl;
+             << simulatedDistance << " minutes" << endl;
     }
 }
 
@@ -73,6 +75,6 @@ void printVehiclesRoster1(PoweredVehicle **vehicles, int size) {
         cout << i << " " << vehicles[i]->toString() << endl;
         cout << "\tWould travel: "
              << vehicles[i]->mileageEstimate(simulatedDistance) << " miles in "
-             << simulatedDistance << " seconds" << endl;
+             << simulatedDistance << " minutes" << endl;
     }
 }
