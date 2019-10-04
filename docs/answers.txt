@@ -10,8 +10,46 @@
           To https://github.com/CheleseW/assignment2.git
              03106e9..7cc96a1  master -> master
 
-(b) How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
-(c) When was the .gitignore file modified last? Write the git command you used to get this information (4 points)
-(d) Mention two reasons why branches are used in a Git repository (4 points)
-(e) What is the difference between git log and git status? (4 points)
-(f) What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)  (g) What command would you use to see the commits whose commit message contains the word “file”? (4 points)  (h) In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation?
+(b) How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information
+    There has been 6 total commits to the repository. 4 of them are by the TA, Esteban Parra, and the other 2 were from me. To get this information I
+    typed in "git shortlog".
+
+(c) When was the .gitignore file modified last? Write the git command you used to get this information
+    It was last modified 9/25/19. git log .gitignore
+
+(d) Mention two reasons why branches are used in a Git repository
+    Branches are used in a Git Repository to organize workflow and keep track of changes and version control. The different branches also allow for
+    collaborators on the same project to keep their code separate from one annother.
+
+(e) What is the difference between git log and git status?
+    According to git-scm.com, git status shows the "working tree status" and git log shows the "commit logs". Git status shows the differences between
+    the "working tree" and the remote repository. Git log shows a list of commits, their subject lines, the author, the date, and the time of the commit.
+
+(f) What command would you use to see the commits where “Vehicle.h” was one of the committed files?
+    git log Vehicle.h
+
+(g) What command would you use to see the commits whose commit message contains the word “file”?
+    git commit --grep file
+
+(h) In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation?
+      I) Inheritance is when a class inherits from another class so they can call the same functions. This is because one class
+         is a type of another class. For example, if the original parent class was a vehicle then classes such as a car, motorcycle,
+         truck, van, and a convertible can all inherit from the original vehicle class.
+      II) Polymorphism is "the ability of an object to take on many forms". Polymorphic objects have more than one IS-A, inheritance,
+          relationship. Polymorphism allows the programmer to "present the same interface for differing underlying data types".
+          https://www.medium.com/@shanikae/plymorphism-explained-simply-7294c8deeef7
+      III) Encapsulation allows for hiding information. An attribute from a class can be hidden from the user through methods that allows
+           for writing and reading to the attribute (getter and setter methods) instead of allowing the user to control access directly.
+
+(i) What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+    The "Dictator and Lieutenants" workflow has various managers (Lieutenants) in control of different parts of the repository. They all must report back
+    to a larger manager in charge known as the Dictator. The dictator pushes from his branch straight to the master branch where the Lieutenants pull straight
+    from this master branch and build upon it. Within the integration-manager workflow, everyone can view everyone else's branch and repositories, but they cannot edit
+    anyone else's stuff, they can only write to their own repositories. To edit the "master" repository, the contributors clone it and then push to it.
+
+(j) How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow?
+    By using the Centralized Workflow contributors would need to fetch and then merge for almost any changes they try to push to the repository. Each contributor must
+    resolve their own conflicts. Instead, by using the Dictator and Lieutenants workflow allows the contributors to be in charge of a specific part of the project so
+    that their portion does not conflict with anyone else's. This allows the dictator to merge the Lieutenants branches with his own master branch which allows for only
+    one person to deal with merge issues instead of all 100 people doing it individually. Everyone's code is mutually exclusive from everyone else's. Only the dictator
+    is in charge of merging them together and making sure that there are no mistakes.
