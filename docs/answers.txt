@@ -52,5 +52,15 @@
     resolve their own conflicts. Instead, by using the Dictator and Lieutenants workflow allows the contributors to be in charge of a specific part of the project so
     that their portion does not conflict with anyone else's. This allows the dictator to merge the Lieutenants branches with his own master branch which allows for only
     one person to deal with merge issues instead of all 100 people doing it individually. Everyone's code is mutually exclusive from everyone else's. Only the dictator
-    is in charge of merging them together and making sure that there are no mistakes.\
-    
+    is in charge of merging them together and making sure that there are no mistakes.
+
+
+
+
+PART 5:
+Is the Driving simulator prototype using polymorphism and/or encapsulation? If you find that the prototype is using any of these two OOP principles, please discuss in
+which way the prototype is using it.
+
+The driving simulator prototype is using polymorphism and encapsulation. It is using encapsulation in the different classes to conceal data and the data can only be
+retrieved using the getter and setter methods. Polymorphism is also used in how the Jet class is derived from the PoweredVehicle class which is derived from the Vehicle
+class. The different classes represent an IS-A relationship with one another.
